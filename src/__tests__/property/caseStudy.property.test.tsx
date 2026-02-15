@@ -23,8 +23,8 @@ const NUM_RUNS = 100;
 /* ------------------------------------------------------------------ */
 
 const nonEmptyStringArb = fc
-  .stringMatching(/^[A-Za-z0-9 .,!]+$/, { minLength: 1, maxLength: 60 })
-  .filter((s) => s.trim().length > 0);
+  .stringMatching(/^[A-Za-z0-9 .,!]+$/)
+  .filter((s) => s.trim().length > 0 && s.length <= 60);
 
 const categoriesArb: fc.Arbitrary<ProjectCategory[]> = fc
   .subarray(

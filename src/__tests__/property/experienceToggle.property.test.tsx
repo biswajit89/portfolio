@@ -30,7 +30,8 @@ const dateStringArb = fc
   .map(({ year, month }) => `${year}-${String(month).padStart(2, '0')}`);
 
 const safeStringArb = (min = 1, max = 40) =>
-  fc.stringMatching(/^[A-Za-z0-9 ]+$/, { minLength: min, maxLength: max });
+  fc.stringMatching(/^[A-Za-z0-9 ]+$/)
+    .filter((s) => s.length >= min && s.length <= max);
 
 const artifactArb: fc.Arbitrary<Artifact> = fc.record({
   type: fc.constantFrom('link', 'image', 'video') as fc.Arbitrary<'link' | 'image' | 'video'>,

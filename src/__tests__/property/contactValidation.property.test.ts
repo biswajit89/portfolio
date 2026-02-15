@@ -2,7 +2,6 @@ import { describe, it, expect } from 'vitest';
 import * as fc from 'fast-check';
 
 import { validateContactForm, validateEmail } from '@/utils/validation';
-import type { ContactFormData } from '@/types/ui';
 
 /**
  * Property 4: Contact Form Validation Rejects Invalid Input

@@ -18,7 +18,8 @@ import type { Education } from '@/types/content';
 const NUM_RUNS = 100;
 
 const safeStringArb = (min = 1, max = 40) =>
-  fc.stringMatching(/^[A-Za-z][A-Za-z0-9]*$/, { minLength: min, maxLength: max });
+  fc.stringMatching(/^[A-Za-z][A-Za-z0-9]*$/)
+    .filter((s) => s.length >= min && s.length <= max);
 
 const dateStringArb = fc
   .record({
