@@ -1,0 +1,444 @@
+{
+  "profile": {
+    "name": "Biswajit Nath",
+    "title": "Sr. Software Engineer",
+    "summary": "Software engineer with 7+ years of experience across the full development lifecycle — from conceptualization to implementation. Skilled in frontend architecture, UI/UX design, and building scalable web applications with modern JavaScript frameworks.",
+    "location": "Sribhumi, Assam, India",
+    "email": "biswajitnath.iit@gmail.com",
+    "photo": "/my_photo.jpeg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/bnath9/",
+      "github": "https://github.com/bnath9"
+    },
+    "resumeURL": "/Biswajit_Nath_Resume.pdf",
+    "availability": "open",
+    "stats": [
+      { "value": "7+", "label": "Years Experience", "icon": "calendar" },
+      { "value": "2", "label": "Companies", "icon": "building" },
+      { "value": "SEIM", "label": "Domain Expertise", "icon": "shield" },
+      { "value": "AI", "label": "Latest Focus", "icon": "zap" }
+    ]
+  },
+  "education": [
+    {
+      "id": "edu-ms-cs",
+      "institution": "Assam University, Silchar",
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "startDate": "2015-06",
+      "endDate": "2017-07",
+      "highlights": [
+        "Worked on indoor localization application",
+        "Research on biological sequence mining",
+        "Focus areas: Data mining, algorithms, big data"
+      ]
+    },
+    {
+      "id": "edu-bs-cs",
+      "institution": "Assam University",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "startDate": "2011-06",
+      "endDate": "2014-08",
+      "highlights": [
+        "Learned programming fundamentals",
+        "Developed a portal for the Department of Computer Science"
+      ]
+    },
+    {
+      "id": "edu-hs",
+      "institution": "Ramkrishna Vidyapith H.S.",
+      "degree": "Higher Secondary",
+      "field": "Science (PCMB)",
+      "startDate": "2009-06",
+      "endDate": "2011-05",
+      "highlights": []
+    },
+    {
+      "id": "edu-hslc",
+      "institution": "Dhupanpur Tribal High School",
+      "degree": "High School Leaving Certificate",
+      "field": "General",
+      "startDate": "2007-01",
+      "endDate": "2009-05",
+      "highlights": []
+    }
+  ],
+
+  "experience": [
+    {
+      "id": "exp-securonix-sr",
+      "company": "Securonix India Pvt. Ltd",
+      "role": "Sr. Software Engineer",
+      "startDate": "2025-01",
+      "endDate": null,
+      "location": "India",
+      "isRemote": false,
+      "summary": [
+        "Promoted to Sr. Software Engineer, leading feature development for the SEIM platform.",
+        "Driving architecture decisions and mentoring junior engineers."
+      ],
+      "achievements": [
+        "Won Hackathon by developing Spotter GPT — a product-ready AI feature",
+        "Leading core SEIM feature development at scale",
+        "Earned Snowflake Fundamentals certification"
+      ],
+      "techStack": ["Java", "JavaScript", "Solr", "Grails", "MySQL", "Snowflake", "Kafka"],
+      "artifacts": []
+    },
+    {
+      "id": "exp-securonix",
+      "company": "Securonix India Pvt. Ltd",
+      "role": "Software Engineer",
+      "startDate": "2021-04",
+      "endDate": "2024-12",
+      "location": "India",
+      "isRemote": false,
+      "summary": [
+        "Feature development for a SEIM (Security Information and Event Management) application.",
+        "Implemented search and storage functionalities for incidents, improving application performance."
+      ],
+      "achievements": [
+        "Built and maintained core SEIM features handling security event data at scale",
+        "Implemented search and storage for incidents using Solr and Snowflake",
+        "Worked with Kafka for real-time event streaming"
+      ],
+      "techStack": ["Java", "JavaScript", "Solr", "Grails", "MySQL", "Snowflake", "Kafka"],
+      "artifacts": []
+    },
+    {
+      "id": "exp-monet-sr",
+      "company": "Monet Networks Inc",
+      "role": "Sr. UI/UX Developer",
+      "startDate": "2020-01",
+      "endDate": "2021-04",
+      "location": "India",
+      "isRemote": false,
+      "summary": [
+        "Promoted to Sr. UI/UX Developer, leading the design and development of the AI-based emotion application.",
+        "Oversaw frontend development and mentored team members."
+      ],
+      "achievements": [
+        "Led the design and development of an AI-based emotion analysis application",
+        "Oversaw frontend development ensuring effective implementation of design concepts",
+        "Collaborated with cross-functional teams including designers and frontend developers"
+      ],
+      "techStack": ["JavaScript", "Angular", "TypeScript", "Node.js", "React", "Adobe XD"],
+      "artifacts": []
+    },
+    {
+      "id": "exp-monet",
+      "company": "Monet Networks Inc",
+      "role": "UI/UX Developer",
+      "startDate": "2019-09",
+      "endDate": "2019-12",
+      "location": "India",
+      "isRemote": false,
+      "summary": [
+        "Joined as UI/UX Developer, collaborating with cross-functional teams to build intuitive interfaces.",
+        "Contributed to the AI-based emotion capture application frontend."
+      ],
+      "achievements": [
+        "Built intuitive user interfaces for the AI emotion application",
+        "Ensured application met both functional and aesthetic requirements"
+      ],
+      "techStack": ["JavaScript", "Angular", "TypeScript", "Node.js", "Adobe XD"],
+      "artifacts": []
+    },
+    {
+      "id": "exp-oneclikk",
+      "company": "Oneclikk",
+      "role": "Intern",
+      "startDate": "2015-06",
+      "endDate": "2015-08",
+      "location": "India",
+      "isRemote": false,
+      "summary": [
+        "Worked on website development for GlobalKPO using HTML, CSS, JavaScript, and jQuery.",
+        "Gained hands-on experience in frontend design and development."
+      ],
+      "achievements": [
+        "Built and delivered the GlobalKPO website",
+        "Developed responsive web pages with HTML, CSS, and jQuery"
+      ],
+      "techStack": ["HTML", "CSS", "JavaScript", "jQuery", "Web Design"],
+      "artifacts": []
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "proj-seim-platform",
+      "title": "SEIM Platform",
+      "description": "Enterprise Security Information and Event Management platform for real-time threat detection, incident search, and security analytics.",
+      "role": "Software Engineer",
+      "duration": "3+ years",
+      "problem": "Security teams needed a robust platform to detect, search, and manage security incidents across large-scale enterprise environments.",
+      "solution": "Built core features for incident search and storage using Solr for fast querying, Snowflake for data warehousing, and Kafka for real-time event streaming.",
+      "architecture": "Java backend with Grails framework, Solr search engine, MySQL and Snowflake for storage, Kafka for event streaming, JavaScript frontend.",
+      "impactMetrics": [
+        "Handled security event data at enterprise scale",
+        "Improved incident search and retrieval performance",
+        "Contributed to core platform used by security teams globally"
+      ],
+      "techStack": ["Java", "JavaScript", "Solr", "Grails", "MySQL", "Snowflake", "Kafka"],
+      "screenshots": [],
+      "highlights": [
+        "Real-time security event processing with Kafka",
+        "Fast incident search powered by Solr",
+        "Scalable data storage with Snowflake integration"
+      ],
+      "categories": ["fullstack", "security"]
+    },
+    {
+      "id": "proj-emotion-ai",
+      "title": "Emotion AI Application",
+      "description": "AI-powered application for capturing and analyzing human emotions through an intuitive interface.",
+      "role": "Lead Frontend Developer",
+      "duration": "2+ years",
+      "problem": "Needed a user-friendly way to capture and analyze emotional data using AI, with a seamless interface for non-technical users.",
+      "solution": "Designed and built an intuitive frontend with Angular and React, integrated with AI backend for emotion analysis, with Adobe XD for prototyping.",
+      "architecture": "Angular/React frontend, Node.js backend, AI emotion analysis engine, responsive UI with Adobe XD design system.",
+      "impactMetrics": [
+        "Successfully launched AI-based emotion capture product",
+        "Created intuitive UI adopted by end users",
+        "Bridged design and development with cross-functional collaboration"
+      ],
+      "techStack": ["JavaScript", "Angular", "TypeScript", "Node.js", "React", "Adobe XD"],
+      "screenshots": [],
+      "highlights": [
+        "AI-driven emotion capture and analysis",
+        "Cross-functional team collaboration",
+        "Design-to-development pipeline with Adobe XD"
+      ],
+      "categories": ["frontend", "ai"]
+    },
+    {
+      "id": "proj-spotter-gpt",
+      "title": "Spotter GPT",
+      "description": "Hackathon-winning AI-powered feature built as a product-ready tool for intelligent data spotting and analysis.",
+      "role": "Developer",
+      "duration": "Hackathon",
+      "problem": "Needed an intelligent way to spot and analyze patterns in security data using AI capabilities.",
+      "solution": "Built a GPT-powered feature that intelligently analyzes and surfaces relevant security data patterns, winning the company hackathon.",
+      "architecture": "GPT integration with existing SEIM platform, intelligent query processing, and pattern recognition.",
+      "impactMetrics": [
+        "Won company hackathon",
+        "Developed as a product-ready feature",
+        "Demonstrated AI integration potential for security analytics"
+      ],
+      "techStack": ["JavaScript", "TypeScript", "AI/GPT", "Node.js"],
+      "screenshots": [],
+      "highlights": [
+        "Hackathon-winning project",
+        "Product-ready AI feature",
+        "Intelligent security data analysis"
+      ],
+      "categories": ["ai", "fullstack"]
+    },
+    {
+      "id": "proj-indoor-localization",
+      "title": "Indoor Localization System",
+      "description": "Research project on indoor positioning and localization techniques for navigation in GPS-denied environments.",
+      "role": "Research Scholar",
+      "duration": "Research project",
+      "problem": "GPS signals are unreliable indoors, making it difficult to provide accurate positioning for indoor navigation.",
+      "solution": "Developed an indoor localization application using signal processing and algorithmic approaches for accurate indoor positioning.",
+      "architecture": "Signal processing algorithms, data mining techniques, localization models.",
+      "impactMetrics": [
+        "Contributed to academic research in indoor localization",
+        "Applied data mining and algorithmic techniques",
+        "Built working indoor localization prototype"
+      ],
+      "techStack": ["Python", "Data Mining", "Algorithms", "Signal Processing"],
+      "screenshots": [],
+      "highlights": [
+        "Academic research project",
+        "Indoor positioning algorithms",
+        "Data mining and big data techniques"
+      ],
+      "categories": ["fullstack"]
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "Frontend",
+      "skills": [
+        {
+          "id": "skill-javascript",
+          "name": "JavaScript",
+          "proficiency": 5,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Core SEIM platform development" },
+            { "type": "experience", "id": "exp-monet", "description": "AI emotion application" }
+          ]
+        },
+        {
+          "id": "skill-angular",
+          "name": "Angular",
+          "proficiency": 4,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-monet", "description": "Emotion AI frontend" }
+          ]
+        },
+        {
+          "id": "skill-react",
+          "name": "React",
+          "proficiency": 4,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-monet", "description": "AI application UI" }
+          ]
+        },
+        {
+          "id": "skill-typescript",
+          "name": "TypeScript",
+          "proficiency": 4,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-monet", "description": "Type-safe frontend development" }
+          ]
+        },
+        {
+          "id": "skill-html",
+          "name": "HTML/CSS",
+          "proficiency": 5,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-monet", "description": "UI/UX implementation" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Backend & Data",
+      "skills": [
+        {
+          "id": "skill-java",
+          "name": "Java",
+          "proficiency": 5,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "SEIM backend development" }
+          ]
+        },
+        {
+          "id": "skill-springboot",
+          "name": "Spring Boot",
+          "proficiency": 5,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Backend microservices" }
+          ]
+        },
+        {
+          "id": "skill-microservices",
+          "name": "Microservices",
+          "proficiency": 4,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Distributed architecture" }
+          ]
+        },
+        {
+          "id": "skill-nodejs",
+          "name": "Node.js",
+          "proficiency": 4,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-monet", "description": "Backend services" }
+          ]
+        },
+        {
+          "id": "skill-mysql",
+          "name": "MySQL",
+          "proficiency": 3,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Database management" }
+          ]
+        },
+        {
+          "id": "skill-snowflake",
+          "name": "Snowflake",
+          "proficiency": 4,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Data warehousing & certified" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tools & Platforms",
+      "skills": [
+        {
+          "id": "skill-solr",
+          "name": "Solr",
+          "proficiency": 4,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Search engine for incidents" }
+          ]
+        },
+        {
+          "id": "skill-kafka",
+          "name": "Kafka",
+          "proficiency": 3,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Event streaming" }
+          ]
+        },
+        {
+          "id": "skill-grails",
+          "name": "Grails",
+          "proficiency": 3,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-securonix", "description": "Web framework" }
+          ]
+        },
+        {
+          "id": "skill-adobexd",
+          "name": "Adobe XD",
+          "proficiency": 3,
+          "proofLinks": [
+            { "type": "experience", "id": "exp-monet", "description": "UI/UX design prototyping" }
+          ]
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "id": "achievement-explorer",
+      "name": "Explorer",
+      "description": "Viewed 3 or more projects — you've seen the highlights!",
+      "icon": "compass",
+      "unlockCondition": {
+        "type": "projectViews",
+        "threshold": 3
+      }
+    },
+    {
+      "id": "achievement-deep-diver",
+      "name": "Deep Diver",
+      "description": "Expanded 2 or more experience entries — you're digging deep!",
+      "icon": "layers",
+      "unlockCondition": {
+        "type": "experienceExpands",
+        "threshold": 2
+      }
+    },
+    {
+      "id": "achievement-fact-checker",
+      "name": "Fact Checker",
+      "description": "Clicked a skill proof link — you like to verify the details!",
+      "icon": "check-circle",
+      "unlockCondition": {
+        "type": "proofClicks",
+        "threshold": 1
+      }
+    },
+    {
+      "id": "achievement-connector",
+      "name": "Connector",
+      "description": "Submitted the contact form — let's talk!",
+      "icon": "message-circle",
+      "unlockCondition": {
+        "type": "contactSubmit",
+        "threshold": 1
+      }
+    }
+  ]
+}

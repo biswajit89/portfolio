@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Primary Meta Tags -->
+    <title>Biswajit Nath — Sr. Software Engineer Portfolio</title>
+    <meta name="title" content="Biswajit Nath — Sr. Software Engineer Portfolio" />
+    <meta name="description" content="Sr. Software Engineer specializing in Java, Spring Boot, Microservices, Solr, Snowflake, and React." />
+    <meta name="author" content="Biswajit Nath" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://jordanrivera.dev/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jordanrivera.dev/" />
+    <meta property="og:title" content="Jordan Rivera — Senior Software Engineer Portfolio" />
+    <meta property="og:description" content="Full-stack engineer with 7+ years building high-performance web applications, interactive 3D experiences, and developer tools." />
+    <meta property="og:image" content="https://jordanrivera.dev/og-image.png" />
+    <meta property="og:site_name" content="Jordan Rivera Portfolio" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jordanrivera.dev/" />
+    <meta property="twitter:title" content="Jordan Rivera — Senior Software Engineer Portfolio" />
+    <meta property="twitter:description" content="Full-stack engineer with 7+ years building high-performance web applications, interactive 3D experiences, and developer tools." />
+    <meta property="twitter:image" content="https://jordanrivera.dev/og-image.png" />
+
+    <!-- Preconnect for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@700;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Prevent flash: read persisted dark mode preference before paint -->
+    <script>
+      (function() {
+        try {
+          var stored = JSON.parse(localStorage.getItem('portfolio-ui') || '{}');
+          var state = stored.state || stored;
+          if (state.isDarkMode === false) {
+            // Light mode
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch(e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
