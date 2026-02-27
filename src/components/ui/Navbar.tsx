@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import {
-  Home, User, Briefcase, FolderOpen, Wrench, GraduationCap, Mail,
+  Home, User, Briefcase, FolderOpen, Wrench, GraduationCap, BookOpen, Mail,
   Menu, X,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -15,6 +15,7 @@ const NAV_ITEMS = [
   { id: 'projects', label: 'Projects', icon: FolderOpen },
   { id: 'skills', label: 'Skills', icon: Wrench },
   { id: 'education', label: 'Education', icon: GraduationCap },
+  { id: 'publications', label: 'Publications', icon: BookOpen },
   { id: 'contact', label: 'Contact', icon: Mail },
 ] as const;
 

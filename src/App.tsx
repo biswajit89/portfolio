@@ -9,6 +9,7 @@ const ExperiencePage = lazy(() => import("@/pages/ExperiencePage"));
 const ProjectsPage = lazy(() => import("@/pages/ProjectsPage"));
 const SkillsPage = lazy(() => import("@/pages/SkillsPage"));
 const EducationPage = lazy(() => import("@/pages/EducationPage"));
+const PublicationsPage = lazy(() => import("@/pages/PublicationsPage"));
 const ContactPage = lazy(() => import("@/pages/ContactPage"));
 
 function AppContent() {
@@ -35,6 +36,7 @@ function AppContent() {
           <Route path="/projects" element={<Suspense fallback={<SectionPageSkeleton />}><ProjectsPage /></Suspense>} />
           <Route path="/skills" element={<Suspense fallback={<SectionPageSkeleton />}><SkillsPage /></Suspense>} />
           <Route path="/education" element={<Suspense fallback={<SectionPageSkeleton />}><EducationPage /></Suspense>} />
+          <Route path="/publications" element={<Suspense fallback={<SectionPageSkeleton />}><PublicationsPage /></Suspense>} />
           <Route path="/contact" element={<Suspense fallback={<SectionPageSkeleton />}><ContactPage /></Suspense>} />
         </Routes>
       </main>

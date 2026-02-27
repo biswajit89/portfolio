@@ -11,6 +11,7 @@ import type {
   ProofLink,
   Achievement,
   AchievementCondition,
+  Publication,
   PortfolioContent,
 } from '@/types/content';
 
@@ -195,6 +196,7 @@ export function isPortfolioContent(value: unknown): value is PortfolioContent {
     obj.experience.every(isExperience) &&
     Array.isArray(obj.projects) &&
     obj.projects.every(isProject) &&
+    Array.isArray(obj.publications) &&
     Array.isArray(obj.skills) &&
     obj.skills.every(isSkillCategory) &&
     Array.isArray(obj.achievements) &&
@@ -246,6 +248,11 @@ export function getSkills(): SkillCategory[] {
 /** Returns the validated achievement definitions. */
 export function getAchievements(): Achievement[] {
   return loadPortfolioContent().achievements;
+}
+
+/** Returns the validated publications. */
+export function getPublications(): Publication[] {
+  return loadPortfolioContent().publications;
 }
 /**
  * Sorts experiences chronologically with most recent first.

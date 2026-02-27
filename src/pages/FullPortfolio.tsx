@@ -13,9 +13,10 @@ const ExperiencePage = lazy(() => import('@/pages/ExperiencePage'));
 const ProjectsPage = lazy(() => import('@/pages/ProjectsPage'));
 const SkillsPage = lazy(() => import('@/pages/SkillsPage'));
 const EducationPage = lazy(() => import('@/pages/EducationPage'));
+const PublicationsPage = lazy(() => import('@/pages/PublicationsPage'));
 const ContactPage = lazy(() => import('@/pages/ContactPage'));
 
-const SECTION_IDS = ['home', 'about', 'experience', 'projects', 'skills', 'education', 'contact'];
+const SECTION_IDS = ['home', 'about', 'experience', 'projects', 'skills', 'education', 'publications', 'contact'];
 
 export default function FullPortfolio() {
   const currentSection = useUIStore((s) => s.currentSection);
@@ -84,6 +85,10 @@ export default function FullPortfolio() {
 
         <section id="education">
           <Suspense fallback={<SectionPageSkeleton />}><EducationPage /></Suspense>
+        </section>
+
+        <section id="publications">
+          <Suspense fallback={<SectionPageSkeleton />}><PublicationsPage /></Suspense>
         </section>
 
         <section id="contact">

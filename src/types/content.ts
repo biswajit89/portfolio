@@ -103,11 +103,24 @@ export interface AchievementCondition {
   threshold: number;
 }
 
+export interface Publication {
+  id: string;
+  title: string;
+  authors: string[];
+  venue: string;
+  year: number;
+  type: 'journal' | 'conference' | 'workshop' | 'preprint';
+  doi?: string;
+  url?: string;
+  abstract?: string;
+}
+
 export interface PortfolioContent {
   profile: Profile;
   education: Education[];
   experience: Experience[];
   projects: Project[];
+  publications: Publication[];
   skills: SkillCategory[];
   achievements: Achievement[];
 }
