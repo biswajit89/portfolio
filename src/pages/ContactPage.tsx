@@ -21,15 +21,14 @@ export default function ContactPage() {
 
   const handleSubmit = useCallback(async (data: ContactFormData): Promise<void> => {
     await emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       {
         from_name: data.name,
         from_email: data.email,
         message: data.message,
-        to_email: 'biswajitnath.iit@gmail.com',
       },
-      'YOUR_PUBLIC_KEY'
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     );
     trackContactSubmit();
   }, [trackContactSubmit]);
@@ -37,8 +36,8 @@ export default function ContactPage() {
   const socials = [
     profile.socials.linkedin ? { href: profile.socials.linkedin, label: 'LinkedIn', icon: Linkedin } : null,
     profile.socials.github ? { href: profile.socials.github, label: 'GitHub', icon: Github } : null,
-    { href: `mailto:${profile.email}`, label: profile.email, icon: Mail },
-  ].filter(Boolean) as { href: string; label: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>> }[];
+    { href: '#', label: profile.email, icon: Mail, isEmail: true },
+  ].filter(Boolean) as { href: string; label: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; isEmail?: boolean }[];
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-24" aria-labelledby="contact-heading">
@@ -61,7 +60,7 @@ export default function ContactPage() {
 
 function ContactInfo({ profile, socials, isReducedMotion }: {
   profile: ReturnType<typeof getProfile>;
-  socials: { href: string; label: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>> }[];
+  socials: { href: string; label: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; isEmail?: boolean }[];
   isReducedMotion: boolean;
 }) {
   return (
@@ -75,8 +74,8 @@ function ContactInfo({ profile, socials, isReducedMotion }: {
       </motion.div>
 
       <motion.div {...useFadeUp(0.12)} className="space-y-3">
-        {socials.map(({ href, label, icon: Icon }) => (
-          <SocialLink key={label} href={href} label={label} icon={Icon} isReducedMotion={isReducedMotion} />
+        {socials.map(({ href, label, icon: Icon, isEmail }) => (
+          <SocialLink key={label} href={href} label={label} icon={Icon} isReducedMotion={isReducedMotion} isEmail={isEmail} />
         ))}
       </motion.div>
 
@@ -91,9 +90,23 @@ function ContactInfo({ profile, socials, isReducedMotion }: {
   );
 }
 
-function SocialLink({ href, label, icon: Icon, isReducedMotion }: {
-  href: string; label: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; isReducedMotion: boolean;
+function SocialLink({ href, label, icon: Icon, isReducedMotion, isEmail }: {
+  href: string; label: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>>; isReducedMotion: boolean; isEmail?: boolean;
 }) {
+  if (isEmail) {
+    return (
+      <motion.div
+        className="group flex items-center gap-3 text-sm text-surface-400"
+        {...useFadeUp(0)}
+      >
+        <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.06] bg-white/[0.02] shadow-lg shadow-black/15">
+          <Icon className="w-4 h-4" aria-hidden="true" />
+        </div>
+        <span>{label}</span>
+      </motion.div>
+    );
+  }
+  
   return (
     <motion.a
       href={href}
