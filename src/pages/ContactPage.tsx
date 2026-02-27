@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, MapPin, ArrowUpRight } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import { useDocumentHead } from '@/hooks/useDocumentHead';
 import { ContactForm } from '@/components/ui/ContactForm';
 import { FadeSlide } from '@/components/motion/FadeSlide';
@@ -19,10 +20,17 @@ export default function ContactPage() {
   const trackContactSubmit = useAchievementStore((s) => s.trackContactSubmit);
 
   const handleSubmit = useCallback(async (data: ContactFormData): Promise<void> => {
-    const subject = encodeURIComponent(`Portfolio Contact from ${data.name}`);
-    const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`);
-    window.location.href = `mailto:biswajitnath.iit@gmail.com?subject=${subject}&body=${body}`;
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await emailjs.send(
+      'YOUR_SERVICE_ID',
+      'YOUR_TEMPLATE_ID',
+      {
+        from_name: data.name,
+        from_email: data.email,
+        message: data.message,
+        to_email: 'biswajitnath.iit@gmail.com',
+      },
+      'YOUR_PUBLIC_KEY'
+    );
     trackContactSubmit();
   }, [trackContactSubmit]);
 
