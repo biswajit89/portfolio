@@ -2,13 +2,13 @@
   "profile": {
     "name": "Biswajit Nath",
     "title": "Sr. Software Engineer",
-    "summary": "Software engineer with 7+ years of experience across the full development lifecycle — from conceptualization to implementation. Skilled in frontend architecture, UI/UX design, and building scalable web applications with modern JavaScript frameworks.",
+    "summary": "Biswajit Nath is an experienced software engineer with 7+ years building enterprise-scale applications. Expert in Java, Spring Boot, and microservices architecture. Specialized in SEIM security platforms at Securonix, real-time data processing with Kafka, search optimization with Solr, and modern frontend development with React and Angular. Proven track record developing high-performance security solutions.",
     "location": "Sribhumi, Assam, India",
     "email": "biswajitnath.iit@gmail.com",
     "photo": "/my_photo.jpeg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/bnath9/",
-      "github": "https://github.com/bnath9"
+      "github": "https://github.com/biswajit89"
     },
     "resumeURL": "/Biswajit_Nath_Resume.pdf",
     "availability": "open",

@@ -18,8 +18,11 @@ export default function ContactPage() {
   useDocumentHead({ title: 'Contact', description: 'Get in touch — send a message or connect.', path: '/contact' });
   const trackContactSubmit = useAchievementStore((s) => s.trackContactSubmit);
 
-  const handleSubmit = useCallback(async (_data: ContactFormData): Promise<void> => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+  const handleSubmit = useCallback(async (data: ContactFormData): Promise<void> => {
+    const subject = encodeURIComponent(`Portfolio Contact from ${data.name}`);
+    const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`);
+    window.location.href = `mailto:biswajitnath.iit@gmail.com?subject=${subject}&body=${body}`;
+    await new Promise((resolve) => setTimeout(resolve, 500));
     trackContactSubmit();
   }, [trackContactSubmit]);
 

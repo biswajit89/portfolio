@@ -6,8 +6,8 @@ interface DocumentHeadOptions {
   path?: string;
 }
 
-const BASE_URL = "https://jordanrivera.dev";
-const SITE_NAME = "Jordan Rivera Portfolio";
+const BASE_URL = "https://biswajit-nath.dev";
+const SITE_NAME = "Biswajit Nath Portfolio";
 
 /**
  * Updates document head meta tags for the current page.
